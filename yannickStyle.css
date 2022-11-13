@@ -1,0 +1,47 @@
+body {
+  margin: 10;
+  padding: 10;
+}
+
+.nav li {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	line-height: 40px;
+	height: 100px;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+ 
+.nav a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	transition: .3s background-color;
+}
+ 
+.nav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+ 
+.nav a.active {
+  background-color: #000;
+  color: #fff;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 200px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  
+}
